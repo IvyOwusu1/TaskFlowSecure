@@ -80,3 +80,20 @@ Connect the FastAPI application to PostgreSQL using SQLAlchemy and create the fi
 
 ### Next Sprint
 Implement database migrations with Alembic instead of relying on `create_all()`.
+
+
+## Sprint 5 — Database Migration Setup
+
+Completed database versioning using Alembic.
+
+Achievements:
+- Installed and configured Alembic
+- Connected Alembic with SQLAlchemy metadata
+- Configured migrations using environment-based database URL
+- Created first migration for users table
+- Applied migration successfully to PostgreSQL
+- Added alembic_version tracking table
+
+Key Learning:
+- Database schema changes should be managed through migrations instead of directly modifying the database.
+- Alembic provides version control for database structure changes.
