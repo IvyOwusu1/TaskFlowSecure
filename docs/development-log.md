@@ -1,5 +1,4 @@
 # Sprint 1 - Bootstrap FastAPI
-
 ## Goal
 Create a minimal FastAPI application.
 
@@ -17,7 +16,6 @@ Project structure and configuration.
 
 
 # Sprint 2 - Project Configuration
-
 ## Goal
 Centralize application configuration using environment variables.
 
@@ -33,8 +31,8 @@ The application failed because the .env file wasn't being read correctly. After 
 ## Next Sprint
 Create a professional project structure and prepare the application for database integration.
 
-## Sprint 3 – Project Architecture
 
+## Sprint 3 – Project Architecture
 ### Goal
 Restructure the FastAPI project into a scalable architecture following separation of concerns.
 
@@ -56,3 +54,29 @@ Restructure the FastAPI project into a scalable architecture following separatio
 ### Next Sprint
 Connect FastAPI to PostgreSQL using SQLAlchemy.
 
+
+## Sprint 4 – Database Integration
+### Goal
+Connect the FastAPI application to PostgreSQL using SQLAlchemy and create the first database model.
+
+### Completed
+- Installed PostgreSQL 18 and pgAdmin.
+- Configured database settings using environment variables.
+- Created the SQLAlchemy engine and session factory.
+- Added the Declarative Base class.
+- Created the first User model.
+- Generated the `users` table automatically from the SQLAlchemy model.
+- Verified the table exists in PostgreSQL.
+
+### What I Learned
+- How SQLAlchemy connects FastAPI to PostgreSQL.
+- The purpose of the engine, session, and declarative base.
+- How Python models are translated into database tables.
+- The role of environment variables in database configuration.
+
+### Challenges
+- Troubleshooting `.env` loading.
+- Ensuring SQLAlchemy recognized the User model.
+
+### Next Sprint
+Implement database migrations with Alembic instead of relying on `create_all()`.
