@@ -10,8 +10,8 @@ app = FastAPI(title=settings.APP_NAME)
 
 @app.get("/")
 def read_root():
-    return {"APP_NAME": settings.APP_NAME, 
-            "APP_VERSION": settings.APP_VERSION ,
+    return {"app_name": settings.APP_NAME, 
+            "version": settings.APP_VERSION ,
             "status": "running",
 
     }

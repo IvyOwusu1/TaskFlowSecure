@@ -32,3 +32,27 @@ The application failed because the .env file wasn't being read correctly. After 
 
 ## Next Sprint
 Create a professional project structure and prepare the application for database integration.
+
+## Sprint 3 – Project Architecture
+
+### Goal
+Restructure the FastAPI project into a scalable architecture following separation of concerns.
+
+### Completed
+- Created the core application package structure.
+- Added `api`, `database`, `models`, `repositories`, `schemas`, and `services` packages.
+- Added `__init__.py` files to each package.
+- Updated the root endpoint response to use lowercase JSON keys.
+- Verified the application still runs after restructuring.
+
+### What I Learned
+- Why separating concerns improves maintainability.
+- The purpose of each application layer.
+- Why project structure should be established before features are added.
+
+### Challenges
+- Ensuring the application continued to run after introducing the new package structure.
+
+### Next Sprint
+Connect FastAPI to PostgreSQL using SQLAlchemy.
+
