@@ -21,6 +21,9 @@ class User(Base):
     # business rule requiring full names to be distinct.
     full_name: Mapped[str] = mapped_column(String(255), nullable=False)
 
+    hashed_password: Mapped[str] = mapped_column(String(255), nullable=False)
+
+
     # Whether the account is active. Modeled as a real column (rather than
     # deleting the row) so accounts can be disabled without losing data,
     # and defaults to True so newly created users are active by default.
